@@ -23,15 +23,13 @@ public class Main {
         long start = System.currentTimeMillis();
 
         t1.start();
-        t1.join();
-
         t2.start();
-        t2.join();
-
         t3.start();
-        t3.join();
+        t4.start();
 
-        t4.join();
+        t1.join();
+        t2.join();
+        t3.join();
         t4.join();
 
         middleDig = getMiddleDigitalOfTreads(r1.getMiddleDigital(), r2.getMiddleDigital(),
